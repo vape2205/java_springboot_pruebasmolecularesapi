@@ -13,12 +13,5 @@ public interface PruebaMolecularService {
     PruebaMolecularDTO update(Long id, PruebaMolecularDTO dto);
     void delete(Long id);
     void save(MultipartFile file);
-    // List<PruebaMolecularDTO> findByDistritoMuestra(String distrito);
-    // List<PruebaMolecularDTO> findByDistritoPaciente(String distrito);
-    // List<PruebaMolecularDTO> findByProvinciaMuestra(String distrito);
-    // List<PruebaMolecularDTO> findByProvinciaPaciente(String distrito);
     List<PruebaMolecularDTO> findByDepartamentoMuestra(String departamento, Integer page, Integer size);
-    // List<PruebaMolecularDTO> findByDepartamentoPaciente(String distrito);
-    // List<PruebaMolecularDTO> findBySexo(String sexo);
-    // List<PruebaMolecularDTO> findByEdad(String edad);
 }
