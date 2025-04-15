@@ -48,10 +48,17 @@ docker compose up -d --build
 ```
 http://localhost:9200/api/pruebas-moleculares
 ```
+
 * Listar establecimientos paginados
 ```
 http://localhost:9200/api/pruebas-moleculares?page=1&size=20
 ```
+
+* Buscar por departamento de la muestra
+```
+http://localhost:9200/api/buscar/departamento-muestra/{departamento}?page=1&size=20
+```
+
 * Cargar archivo establecimientos
 ```
 curl --location 'http://localhost:9200/api/pruebas-moleculares/upload' \
